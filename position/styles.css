@@ -1,0 +1,44 @@
+.padre{
+    margin:40px;
+    background-color: aquamarine;
+    padding:20px;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    height:1200px;
+    /*padre relative, imagen dentro absolute en el proyecto 1*/
+}
+
+.hijo-1{
+    /* text-transform: lowercase; */
+    position: sticky;
+    top:30px;
+    left:30px; 
+    /* top y right desde donde se supone que debería estar por relative (a sí mismo)*/
+    /*absolute es in-line (no block, no llega hasta el final) es 30px hacia abajo y 30 a la izquierda del primer ancestro que no sea static (en este caso el HTML)*/
+    /*se mantiene arriba fijo cuando haces scroll: fixed*/
+    /*sticky se pega al padre*/
+    background-color: blueviolet;
+    font-size: 38px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.hijo-2{
+    /* text-transform: lowercase; */
+    background-color: rgb(116, 226, 43);
+    font-size: 38px;
+    padding: 20px;
+    font-weight: 700;
+
+}
+
+.hijo-3{
+
+    /* text-transform: lowercase; */
+    background-color: rgb(226, 49, 43);
+    font-size: 38px;
+    padding: 20px;
+    font-weight: 700;
+}
